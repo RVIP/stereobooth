@@ -106,7 +106,7 @@ def convert(name,delay=15, dir=False):
     if(dir):
         os.chdir(dir)
     call(["convert", "-delay", str(delay), "-loop", "0",
-          "-posterize","16",
+          "-posterize","256",
           "-resize","50%",
           "img-*.png", name])
     if(dir):
